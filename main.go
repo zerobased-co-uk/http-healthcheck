@@ -17,6 +17,6 @@ func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
     http.HandleFunc("/", healthCheckHandler)
-    fmt.Println("Server is starting on port 8080...")
-    http.ListenAndServe(":8080", nil)
+    fmt.Println("Server is starting on port 8082...")
+    http.ListenAndServe(":8082", nil)
 }
